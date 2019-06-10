@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+        <title>Plutus.VC</title>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi,user-scalable=no">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<meta http-equiv="Access-Control-Allow-Origin" content="*">
+		<link rel="icon" href="http://plutus.vc/img/Favicon.png" type="img/x-ico" />
+<style>
+*{
+	margin:0px;
+	padding:0px;
+}
+a{
+	text-decoration: none;
+}
+li,ul{
+	list-style: none;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.plutusBox{
+	max-width:1000px;
+	margin:auto;
+	background-color: #EFEFEF;
+}
+.nav{
+	padding: 23px 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav p{
+	float:right;
+}
+.nav a{
+	color: #888;
+	margin: 0px 7px;
+}
+.nav .classSelect{
+	color: #C9B897;
+}
+.banner img{
+	display: block;
+}
+
+
+.information{
+	padding: 55px 100px;
+	padding-bottom: 0px;
+}
+.information li{
+	margin: 23px 0px;
+	overflow: hidden;
+}
+.information h3{
+	color: #40486A;
+	font-size: 19px;
+}
+.information li p{
+	color: #989AA4;
+	margin: 13px 0px;
+	font-size: 15px;
+}
+.information div{
+	float: left;
+	width: 500px;
+}
+.information img{
+	float: right;
+}
+
+/**/
+.focuses{
+    padding: 0px 77px;
+    position: relative;
+    bottom: -70px;
+}
+.focuses div{
+	border: 3px solid #B19763;
+	padding: 15px 33px;
+	background-color: #fff;
+}
+.focuses div h3{
+	text-align: center;
+	color: #333C61;
+	margin: 9px 0px;
+	border-bottom: 1px solid #333C61;
+	padding-bottom: 15px;
+}
+
+.focuses ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 23px 0px;
+}
+.focuses li{
+	text-align: center;
+	font-size: 15px;
+	width: 100%;
+}
+.focusesColor{
+	color: #B69E6F;
+}
+.ourTeam{
+	background-image: url('img/team@2x.png');
+	padding: 120px 0px;
+	padding-bottom: 30px;
+}
+.ourTeam h3{
+	font-size: 27px;
+	color: #B09662;
+	text-align: center;
+}
+.ourTeam .alvin{
+    width: 700px;
+    overflow: hidden;
+ 	margin: 55px auto;
+}
+.alvin img{
+	float: left;
+}
+.alvin div{
+	float: left;
+	width: 480px;
+	margin-left: 17px;
+}
+.alvin span{
+	color: #A68F62;
+}
+.alvin p{
+	color: #92897C;
+	font-size: 14px;
+	margin-top: 13px;
+}
+
+
+
+/**/
+.contactUs{
+	background-color: #4D4D4D;
+	padding-bottom: 10px;
+}
+.contactUs h3{
+	text-align: center;
+	color: #AA9261;
+	font-size: 27px;
+	margin: 27px 0px;
+}
+.contactUs div{
+	padding: 7px 100px;
+	border-bottom: 1px solid #9A865D;
+}
+.contactUs ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
+.contactUs ul h4{
+	color: #fff;
+}
+.contactUs ul p{
+	color: #9A9A9A;
+}
+
+.contactUs .plutusEmail{
+	border: none;
+}
+
+.plutusEmail{
+	padding: 23px 0px;
+}
+.plutusEmail h4{
+	text-align: center;
+	color: #fff;
+	margin: 9px 0px;
+}
+.plutusEmail p{
+	color: #eee;
+	text-align: center;
+}
+.htmlBottom{
+	background-color: #A7A7A7;
+	text-align: center;
+	font-size: 15px;
+	padding: 13px 0px;
+	color: #eee;
+}
+
+.portfolio{
+	padding: 50px 100px;
+	background-color: #fff;
+}
+.portfolio h3{
+	text-align: center;
+	font-size: 23;
+	color: #394265;
+}
+.portfolio p{
+	text-align: center;
+	color: #7A7E8A;
+	font-size: 14px;
+}
+
+.portfolio ul{
+	overflow: hidden;
+	margin: 70px 0px;
+}
+
+
+
+.nav-side{
+	width: 32px;
+	height: 32px;
+	right: 15px;
+	top: 18px;
+	display:none;
+}
+.nav-side hr{
+	margin:7px 0px;
+}
+
+
+
+#webNav{
+	background-color:#fff;
+	width:100%;
+	padding:9px 0px;
+}
+#webNav ul{
+	padding:0px 7px;
+}
+#webNav li{
+	margin:13px 0px;
+}
+#webNav a{
+	font-size:15px;
+	color:#888;
+}
+#webNav .classSelect{
+	color: #C9B897;
+}
+
+
+.alvin img{
+	width:146px;
+	height:146px;
+}
+
+
+
+.navPc{
+	position: relative;
+}
+.navPc p{
+	display: none;
+    position: absolute;
+    right: -17px;
+    background: #fff;
+    padding: 0px 17px;
+}
+.navPc p a{
+	margin: 0px;
+}
+.navPc div{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+@media screen and (max-width: 800px){
+	.nav{
+		padding:13px 7px;
+
+	}
+	.navPc{
+		display:none;
+	}
+	.information{
+		padding:0px 7px;
+	}
+	.focuses{
+		padding:0px;
+		bottom:0px;
+	}
+	.focuses ul{
+		display:block;
+	}
+	.focuses li{
+		margin:23px 0px;
+	}
+	.ourTeam .alvin{
+		width: auto;
+		padding: 0px 7px;
+		text-align: center;
+	}
+	.alvin div{
+		float: none;
+		width: auto;
+		margin: 0px;
+	}
+	.alvin img{
+		float:none;
+	}
+	.portfolio{
+		padding:5px 7px;
+	}
+	.portfolio ul{
+		margin:11px 0px;
+	}
+	.portfolio ul li{
+		float:none;
+		text-align:center;
+	}
+	.contactUs div{
+		padding:7px 0px;
+	}
+	.contactUs ul{
+		display:block;
+	}
+	.contactUs ul li{
+		margin:15px 0px;
+	}
+	.nav-side{
+		display:block;
+	}
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="plutusBox">
+	<header class="nav">
+	
+		<div class="nav-side" onClick="webNavEve()">
+			<hr>
+			<hr>
+			<hr>
+		</div>
+		
+		<img src="img/Vector-Smart-Object2@2x.png"/>
+		<div class="navPc">
+			<div class="">
+				<a href="#dom1" class="classSelect">ABOUT US</a>
+				<a href="#dom2">Our Team</a>
+				<a href="#dom3">Portfolio</a>
+				<a href="#dom4">CONTACT US</a>
+				<a href="javascript:;" class="china_flag"><img width="45px;" src="img/US_Flag.png"/></a>
+			</div>
+			<p class="floatRight">
+				<a href="chinese.html" class="classSelect">
+					<img width="45px;" src="img/China_flag.png"/>
+				</a>
+				<br/>
+				<a href="index.html" class="classSelect">
+					<img width="45px;" src="img/US_Flag.png"/>
+				</a>
+			</p>
+		</div>
+	</header>
+	
+	<nav id="webNav" style="display:none">
+		<ul>
+			<li>
+				<a href="javascript:;" class="classSelect">ABOUT US</a>
+			</li>
+			<li>
+				<a href="javascript:;">Our Team</a>
+			</li>
+			<li>
+				<a href="javascript:;">Portfolio</a>
+			</li>
+			<li>
+				<a href="javascript:;">CONTACT US</a>
+			</li>
+			<li>
+				<a href="chinese.html">简体中文</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="banner" id="dom1">
+		<img width="100%;" src="img/banner@2x.png"/>
+		<img width="100%;" src="img/banner@2x_new.png"/>
+	</div>
+	
+	<div class="information">
+		<ul>
+			<li>
+				<h3>Our Inspiration</h3>
+				<p>“Plutus is the god of Wealth in ancient Greek. In the mythology Plutus was blinded by Zeus, so that he would be able to dispense his gifts without prejudice and without any regard to merit. Plutus can be identified as the one bearing the’cornucopia’—horn of plentyor is depicted as a boy in the arms of Tyche, the God of Fortune. Plutus symbolically expressed the sources of wealth.”</p>
+			</li>
+			<li>
+				<div class="">
+					<h3>What we do</h3>
+					<p>PLUTUS.VC is a next generation Innovation Venture Fund. PLUTUS.VC fund primarily focused in China and USA innovations, but we do seek deals Worldwide. PLUTUS.VC targets at the *TMT sector –Telecommunications Mobile Technology, but is open to any new innovative business concepts. </p>
+					<p>PLUTUS.VC invests in Angel, Pre-A and A-Round. Anything from $500,000 to $5 Million. $200 million fund reserved for investment into promising technology, internet, mobile, gaming and innovation companies in China, USA and globally. </p>
+				</div>
+				<img src="img/1@2x.png"/>
+			</li>
+		</ul>
+	</div>
+
+	<div class="focuses">
+		<div class="">
+			<h3>PLUTUS.VC focuses on:</h3>
+			<ul>
+				<li>
+					<img src="img/Vector-Smart-Object1@2x.png"/>
+					<p class="focusesColor">ECommerce and sales innovations –</p>
+					<p>new methodology in selling.</p>
+				</li>
+				<li>
+					<img src="img/Vector-Smart-Object@2x.png"/>
+					<p class="focusesColor">Mobile everywhere –</p>
+					<p>Technology that moves with people.</p>
+				</li>
+				<li>
+					<img src="img/Vector-Smart-Object3@2x.png"/>
+					<p class="focusesColor">Gaming play -</p>
+					<p>fun and entertainment extraordinaire.</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="img/Vector-Smart-Object4@2x.png"/>
+					<p class="focusesColor">Change something –</p>
+					<p>improving people’s life and values.</p>
+				</li>
+				<li>
+					<img src="img/Vector-Smart-Object5@2x.png"/>
+					<p class="focusesColor">Connecting the dots –</p>
+					<p>from people to gadgets.</p>
+				</li>
+				<li>
+					<img src="img/Vector-Smart-Object7@2x.png"/>
+					<p class="focusesColor">Big tech –</p>
+					<p>show the world something crazy! </p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="img/Vector-Smart-Object8@2x.png"/>
+					<p class="focusesColor">Next Gen media –</p>
+					<p>contents rules!</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class="ourTeam" id="dom2">
+		<h3>
+			OUR TEAM
+		</h3>
+		<ul>
+			<li class="alvin">
+				<img src="img/26167580_10155133470966524_5349391157517177640_n@2x.png"/>
+				<div class="">
+					<span>Calvin Ng</span>
+					<p>General Partner</p>
+					<p>
+						Calvin is a serial entrepreneur and angel investor with many successes and achievements on his belt (Digital Hollywood 2017: HKE2022 / Retech 2017: ASX:RTE / Citic Telecom 2007: HKE1883 / THE9 2004: NCTY). Back in 2000 Calvin master-minded the control of more than 90% of cyber cafes in Malaysia and is the only Company that partners with all the major PC games publishers worldwide. A former veteran in the promotional advertising industry, Calvin had won numerous awards and tenders from top international client for 4 years straight (Triumph International and Public Bank). During the Daytona USA craze back in 1994, Calvin took a video game company from USD 5 million in sales to USD 50 million within just 1 year.
+					</p>
+				</div>
+			</li>
+			<li class="alvin">
+				<img src="img/businessman-2051664_960_720@2x.png"/>
+				<div class="">
+					<span>Sunny Cheung</span>
+					<p>Senior Partner</p>
+					<p>Sunny Cheung is a builder of Chinese internet when it was still in its infancy. In 1995, he created the first CHINANET website, called The Window of Shenzhen, and the first BBS in China, Yi Wang Qing Shen. Sunny Cheung left China Telecom in 2000, and established cnns (An Luo Technology), which then became famous for cyber security technology in China. He was once the executive manager of Asia Wirless/Hua Ya He Xun, in charge of TMT projects. In 2009, Sunny joined Green Pine Capital Partners, a leading RMB fund in China, and he was in charge of TMT related investments then. Sunny created Qianhai Innoangel together with Li Zhu, and Lin Sen in 2014.This fund is focused on the early-stage investment opportunities in intelligence and new consumption related </p>
+				</div>
+			</li>
+			<li class="alvin">
+				<img src="img/barrantes.png"/>
+				<div class="">
+					<span>David Barrantes</span>
+					<p>Venture Partner</p>
+					<p>Based  in   Los  Angeles  CA,  his  passion  for  culture  and  building  businesses   drove  David  to  Asia  where  he  has  been  doing  business  for  over   8  years.     In  2010  David  co-founded  GC  Ventures,  a  Hong  Kong  based  company,  which  helped  companies   around  the  world  both  successfully  develop  and  launch  products  in  Chinese  Market.  Through  his   experience  and  wide  network  in  Asia,  David  later  Co-Founded  MSM  Luxury  Estates  China  a  high-end  boutique  real  estate  and  investment  firm  based  in  Beverly  Hills  CA.  The  company  caters  to   both  HNW  Chinese  Investors  and  large  overseas  Private  Equity  Funds,  looking  for  properties  and   investments  in  the  U.S,  with  projects  upward  of  100  Million  USD.     In  2015,  David  co--founded  and  launched  Elevate  Lifestyle,  a  global  product  business  in  the  e-cigarette  &  CBD  industry.  With  products  now  sold  in  over  35  countries  and  offices  in  3  continents.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+
+	<div class="portfolio" id="dom3">
+		<h3>Portfolio</h3>
+		<p>We are multi-stage investors and invest in both equity and innovative assets. Our successful array of investments ranges from some of the world’s leading online gaming company to well-known cyber security companies across the world.</p>
+		<ul>
+			<li class="floatLeft">
+				<img src="img/nav.jpg"/>
+			</li>
+			<li class="floatRight">
+				<img src="img/newNav.jpg"/>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="contactUs" id="dom4">
+		<img width="100%;" src="img/business-3152586_960_720@2x.png"/>
+		<div>
+			<h3>Contact Us</h3>
+			<!--
+			<ul>
+				<li>
+					<h4>Hong Kong</h4>
+					<p>L7, 40 Bonham Strand,</p>
+					<p>SheungWan, Hong Kong</p>
+				</li>
+				<li>
+					<h4>Shanghai</h4>
+					<p>Changning District</p>
+					<p>Loushanguan Road</p>
+				</li>
+				<li>
+					<h4>Shenzhen</h4>
+					<p>Futian District</p>
+					<p>Yitian Road</p>
+				</li>
+			</ul>
+			-->
+			<ul>
+				<li>
+					<h4>Hong Kong</h4>
+					<!--<p>1209, Tower 1,  33 Canton Road,</p>-->
+					<!--<p>China Hong Kong City,</p>-->
+					<!--<p>Tsim-sha-tsui, Kowloon, Hong Kong</p>-->
+				</li>
+				<li>
+					<h4>Shanghai</h4>
+					<!--<p>35 Loushanguan Road</p>-->
+					<!--<p>Changning District, Shanghai</p>-->
+				</li>
+				<li>
+					<h4>Shenzhen</h4>
+					<!--<p>23/F, New World Centre, </p>-->
+					<!--<p>No. 6009, Yitian Road, </p>-->
+					<!--<p>Futian District, Shenzhen</p>-->
+				</li>
+			</ul>
+		</div>
+
+		<div class="plutusEmail">
+			<h4 class="">Email</h4>
+			<p>contact@plutus.vc</p>
+		</div>
+	
+	</div>
+
+
+	<p class="htmlBottom">
+		Copyright © 2018, Plutus.vc. All Rights Reserved.
+	</p>
+
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="http://talklpa.ltd/jquery.min.js"></script>
+<script type="text/javascript">
+$('.china_flag').on('click',function(){
+	$('.navPc p').toggle();
+});
+
+function webNavEve(){
+	console.log(document.getElementById('webNav').style.display)
+	if(document.getElementById('webNav').style.display=='none'){
+		document.getElementById('webNav').style.display = 'block';
+	}else{
+		document.getElementById('webNav').style.display = 'none';
+	}
+	
+}
+
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
